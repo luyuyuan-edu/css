@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>pubu</title>
+		<style type="text/css">
+			#water{
+				position: relative;
+				width: 90%;
+				margin: 0 auto;
+				outline: 1 solid;
+			}
+			#water img{
+				transition: all 0.2s; /*img里面的所有css属性过度显示出来*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="water">
+			
+		</div>
+		<script src="new_file.js"></script>
+		<script type="text/javascript">
+			
+			var div =document.getElementById('water');
+			var img=[];
+			for (var i=1; i<=19; i++) {
+				img.push("image/" +i+".jpg")
+			}
+			createWaterFall(div,img,220);
+		</script>
+	</body>
+</html>
